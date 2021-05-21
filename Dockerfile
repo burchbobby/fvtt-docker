@@ -1,4 +1,6 @@
-FROM node:12-alpine
+FROM alpine:3.11
+
+ENV NODE_VERSION 16.2.0
 
 RUN deluser node && \
     mkdir /opt/foundryvtt && \
